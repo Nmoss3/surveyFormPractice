@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">Do You Play Video Games?</h1>
+            <p id="description">I am trying to see if you are addicted to videogames.</p>
+
+            <form id="survey-form">
+                <label id="name-label" for="name">*Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    <br>
+                <label id="email-label" for="email">*Email</label>
+                <input type="email" name="email" id="email" placeholder="jondoe3@email.com" required>
+                    <br>
+                <label id="number-label" for="number">*How many hours a day?</label>
+                <input type="number" name="number" id="number" placeholder="Enter an hour amount" min="1" max="20" required>
+                    <br>
+                <label for="drop-down">What Are You Playing On?</label>
+                <select name="drop-down" id="dropdown">
+                    <option value="Xbox">Xbox</option>
+                    <option value="Playstation">Playstation</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Computer">Computer</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br>
+
+                <fieldset>
+                    <legend>What Else Do You Do In Your Free Time?</legend>
+                        <input type="radio" name="freetime" id="Workout" value="workout">
+                    <label for="workout">Workout</label>
+                    <br>
+                        <input type="radio" name="freetime" id="yardwork" value="yardwork">
+                    <label for="yardwork">Yard Work</label>
+                    <br>
+                        <input type="radio" name="freetime" id="read" value="read">
+                    <label for="read">Read</label>
+                    <br>
+                        <input type="radio" name="freetime" id="art" value="art">
+                    <label for="art">Art</label>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend>Why Do You Play Video Games?</legend>
+                        <input type="checkbox" name="why" id="relax" value="relax">
+                    <label for="relax">To Relax</label>
+                    <br>
+                        <input type="checkbox" name="why" id="story" value="story">
+                    <label for="story">For The Story</label>
+                    <br>
+                        <input type="checkbox" name="why" id="competition" value="competition">
+                    <label for="competition">Competition</label>
+                    <br>
+                        <input type="checkbox" name="why" id="other" value="other">
+                    <label for="other">Other</label>
+
+                <br>
+
+                </fieldset>
+
+                <textarea id="comments" rows="5" columns="500">
+                    What is your favorite game?
+                </textarea><br><br>
+                
+                <div class="submit-button">
+                <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
